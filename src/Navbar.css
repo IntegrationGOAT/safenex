@@ -1,0 +1,119 @@
+.pill-nav-container {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  width: max-content;
+  mix-blend-mode: normal;
+  filter: none;
+  will-change: contents;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.pill-nav {
+  --nav-h: 50px;
+  --pill-pad-x: 24px;
+  --pill-gap: 12px;
+  
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.pill-nav-items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--nav-h);
+  gap: var(--pill-gap);
+}
+
+.pill-list {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  gap: var(--pill-gap);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.pill-list > li {
+  display: flex;
+  height: 100%;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 var(--pill-pad-x);
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  transition: all 0.3s ease;
+  border: none;
+  mix-blend-mode: normal;
+  filter: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.pill:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+  border-radius: 50px;
+}
+
+.pill .hover-circle {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  border-radius: 50%;
+  background: transparent;
+  z-index: 1;
+  display: none;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.pill .label-stack {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  z-index: 2;
+}
+
+.pill .pill-label {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 1;
+  will-change: transform;
+}
+
+.pill.is-active {
+  background: transparent;
+  color: #fff;
+}
