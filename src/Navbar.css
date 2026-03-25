@@ -1,14 +1,20 @@
 .pill-nav-container {
-  position: absolute;
+  position: fixed;
   top: 2rem;
   right: 2rem;
   z-index: 9999;
   width: max-content;
   mix-blend-mode: normal;
-  filter: none;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   will-change: contents;
   backface-visibility: hidden;
-  transform: translateZ(0);
+  transform: translateZ(100px) !important;
+  opacity: 1 !important;
+  visibility: visible;
+  isolation: isolate;
+  pointer-events: auto;
 }
 
 .pill-nav {
@@ -22,10 +28,14 @@
   justify-content: flex-end;
   box-sizing: border-box;
   background: transparent;
-  padding: 0;
+  padding: 0 !important;
   border-radius: 0;
   border: none;
   box-shadow: none;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  opacity: 1 !important;
 }
 
 .pill-nav-items {
@@ -73,10 +83,14 @@
   transition: all 0.3s ease;
   border: none;
   mix-blend-mode: normal;
-  filter: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  opacity: 1 !important;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  text-rendering: geometricPrecision;
+  image-rendering: crisp-edges;
 }
 
 .pill:hover {
@@ -103,6 +117,9 @@
   display: inline-block;
   line-height: 1;
   z-index: 2;
+  opacity: 1 !important;
+  filter: none !important;
+  backdrop-filter: none !important;
 }
 
 .pill .pill-label {

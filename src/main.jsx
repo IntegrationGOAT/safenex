@@ -1,19 +1,207 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Aurora from './Aurora';
+import Prism from './Prism';
+import BorderGlow from './BorderGlow';
 import Navbar from './Navbar';
-import './Aurora.css';
+import './style.css';
 
 function App() {
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
-      <Aurora
-        colorStops={["#fff567","#f10404","#5227FF"]}
-        blend={0.5}
-        amplitude={1.0}
-        speed={1}
-      />
-      <Navbar />
+    <div style={{ backgroundColor: '#000000' }}>
+      {/* Hero Section - Fixed viewport */}
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100vh', zIndex: 0, backgroundColor: '#000000' }}>
+        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+          <Prism
+            animationType="3drotate"
+            timeScale={0.5}
+            height={3.5}
+            baseWidth={5.5}
+            scale={3.6}
+            hueShift={0}
+            colorFrequency={1}
+            noise={0}
+            glow={1}
+          />
+        </div>
+        
+        {/* Center Content - Stays in place */}
+        <div style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          textAlign: 'center',
+          zIndex: 10,
+          width: '90%',
+          maxWidth: '800px',
+          pointerEvents: 'none'
+        }}>
+          <h1 style={{
+            fontSize: '72px',
+            fontWeight: 'bold',
+            color: '#ffffff',
+            margin: '0 0 24px 0',
+            letterSpacing: '2px'
+          }}>SafeNex</h1>
+          
+          <p style={{
+            fontSize: '18px',
+            color: '#ffffff',
+            margin: '0',
+            lineHeight: '1.6',
+            fontWeight: '300',
+            opacity: 0.9
+          }}>
+            To reduce post-accident fatalities and property loss by providing an automatic, low-cost solution that prevents fuel tank fires through smart emulsification.
+          </p>
+        </div>
+
+        {/* Gradient blend at bottom - Larger */}
+        <div style={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          width: '100%',
+          height: '250px',
+          background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1))',
+          pointerEvents: 'none',
+          zIndex: 5
+        }} />
+        
+        <Navbar />
+      </div>
+
+      {/* Cards Section - Starts below hero */}
+      <div style={{ marginTop: '100vh', padding: '80px 40px', backgroundColor: '#000000', position: 'relative', zIndex: 1 }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '48px', fontWeight: 'bold', color: '#ffffff', textAlign: 'center', marginBottom: '60px', letterSpacing: '1px' }}>
+            How SafeNex Works
+          </h2>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
+            {/* Card 1 */}
+            <BorderGlow
+              edgeSensitivity={53}
+              glowColor="40 80 80"
+              backgroundColor="#0a0015"
+              borderRadius={28}
+              glowRadius={56}
+              glowIntensity={2}
+              coneSpread={37}
+              colors={['#c084fc', '#f472b6', '#38bdf8']}
+            >
+              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.1s both' }}>
+                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>What is Emulsification...?</h3>
+                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </BorderGlow>
+
+            {/* Card 2 */}
+            <BorderGlow
+              edgeSensitivity={53}
+              glowColor="40 80 80"
+              backgroundColor="#0a0015"
+              borderRadius={28}
+              glowRadius={56}
+              glowIntensity={2}
+              coneSpread={37}
+              colors={['#c084fc', '#f472b6', '#38bdf8']}
+            >
+              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.2s both' }}>
+                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Saponification</h3>
+                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </BorderGlow>
+
+            {/* Card 3 */}
+            <BorderGlow
+              edgeSensitivity={53}
+              glowColor="40 80 80"
+              backgroundColor="#0a0015"
+              borderRadius={28}
+              glowRadius={56}
+              glowIntensity={2}
+              coneSpread={37}
+              colors={['#c084fc', '#f472b6', '#38bdf8']}
+            >
+              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.3s both' }}>
+                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Working Equations</h3>
+                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </BorderGlow>
+
+            {/* Card 4 */}
+            <BorderGlow
+              edgeSensitivity={53}
+              glowColor="40 80 80"
+              backgroundColor="#0a0015"
+              borderRadius={28}
+              glowRadius={56}
+              glowIntensity={2}
+              coneSpread={37}
+              colors={['#c084fc', '#f472b6', '#38bdf8']}
+            >
+              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.4s both' }}>
+                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>View our Archives</h3>
+                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/><br/>
+                  <a href="#" style={{ color: '#38bdf8', textDecoration: 'none', fontWeight: '500' }}>View it here →</a>
+                </p>
+              </div>
+            </BorderGlow>
+
+            {/* Card 5 */}
+            <BorderGlow
+              edgeSensitivity={53}
+              glowColor="40 80 80"
+              backgroundColor="#0a0015"
+              borderRadius={28}
+              glowRadius={56}
+              glowIntensity={2}
+              coneSpread={37}
+              colors={['#c084fc', '#f472b6', '#38bdf8']}
+            >
+              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.5s both' }}>
+                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Advanced Technology</h3>
+                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                </p>
+              </div>
+            </BorderGlow>
+
+            {/* Card 6 */}
+            <BorderGlow
+              edgeSensitivity={53}
+              glowColor="40 80 80"
+              backgroundColor="#0a0015"
+              borderRadius={28}
+              glowRadius={56}
+              glowIntensity={2}
+              coneSpread={37}
+              colors={['#c084fc', '#f472b6', '#38bdf8']}
+            >
+              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.6s both' }}>
+                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Future Prospects</h3>
+                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                </p>
+              </div>
+            </BorderGlow>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
