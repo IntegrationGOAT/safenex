@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import BorderGlow from './BorderGlow';
-import Navbar from './Navbar';
+import BorderGlow from './component/BorderGlow';
+import Navbar from './component/Navbar';
+import FatalitiesCounter from './component/FatalitiesCounter';
 import './style.css';
 
 function App() {
@@ -227,6 +228,9 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Fatalities Counter Section */}
+      <FatalitiesCounter />
     </div>
   );
 }
