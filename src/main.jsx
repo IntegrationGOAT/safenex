@@ -183,7 +183,7 @@ function App() {
                 <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/><br/>
-                  <a href="#" style={{ color: '#38bdf8', textDecoration: 'none', fontWeight: '500' }}>View it here →</a>
+                  <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'none', fontWeight: '500' }}>View it here →</a>
                 </p>
               </div>
             </BorderGlow>
