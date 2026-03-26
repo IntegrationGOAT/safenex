@@ -246,19 +246,20 @@ function App() {
       <footer style={{
         backgroundColor: '#000000',
         borderTop: '2px solid #333333',
-        padding: '60px 20px',
+        padding: '40px 20px',
         textAlign: 'center',
         marginTop: '80px',
-        width: '100%'
+        position: 'relative',
+        zIndex: 10
       }}>
         <p style={{
           fontSize: '16px',
           fontWeight: '500',
           color: '#ffffff',
           margin: '0',
-          letterSpacing: '0.5px'
+          paddingBottom: '10px'
         }}>
-          © SafeNex. All rights reserved 2026. blahblaha
+          © SafeNex. All rights reserved 2026.
         </p>
       </footer>
     </div>
