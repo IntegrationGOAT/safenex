@@ -10,7 +10,7 @@ function App() {
   return (
     <div style={{ backgroundColor: '#000000' }}>
       {/* Hero Section - Fixed viewport */}
-      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100vh', zIndex: 0, backgroundColor: '#000000' }}>
+      <div id="hero" style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100vh', zIndex: 0, backgroundColor: '#000000' }}>
         <div style={{ width: '100%', height: '100%', position: 'relative', overflow: 'hidden' }}>
           {/* Animated Background Orbs */}
           <div style={{
@@ -99,7 +99,7 @@ function App() {
       </div>
 
       {/* Cards Section - Starts below hero */}
-      <div style={{ marginTop: '100vh', padding: '80px 40px', backgroundColor: '#000000', position: 'relative', zIndex: 1 }}>
+      <div id="about" style={{ marginTop: '100vh', padding: '80px 40px', backgroundColor: '#000000', position: 'relative', zIndex: 1 }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '48px', fontWeight: 'bold', color: '#ffffff', textAlign: 'center', marginBottom: '60px', letterSpacing: '1px' }}>
             How SafeNex Works
@@ -234,7 +234,17 @@ function App() {
       <FatalitiesCounter />
 
       {/* Services Section with Spotlight Cards */}
-      <ServicesSection />
+      <div id="services">
+        <ServicesSection />
+      </div>
+
+      {/* Contact Section */}
+      <div id="contact" style={{ padding: '80px 40px', backgroundColor: '#000000', position: 'relative', zIndex: 1, textAlign: 'center' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '48px', fontWeight: 'bold', color: '#ffffff', marginBottom: '20px', letterSpacing: '1px' }}>Get in Touch</h2>
+          <p style={{ fontSize: '18px', color: '#cccccc', lineHeight: '1.6' }}>Contact us for more information about SafeNex and how we can help protect lives.</p>
+        </div>
+      </div>
     </div>
   );
 }

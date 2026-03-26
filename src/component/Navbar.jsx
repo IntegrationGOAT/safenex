@@ -80,11 +80,19 @@ const Navbar = () => {
     });
   };
 
+  const handleScroll = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const navItems = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
-    { label: 'Contact Us', href: '/contact' }
+    { label: 'Home', id: 'hero' },
+    { label: 'About', id: 'about' },
+    { label: 'Services', id: 'services' },
+    { label: 'Contact Us', id: 'contact' }
   ];
 
   return (
@@ -93,10 +101,11 @@ const Navbar = () => {
         <div className="pill-nav-items" ref={navItemsRef}>
           <ul className="pill-list" role="menubar">
             {navItems.map((item, i) => (
-              <li key={item.href || `item-${i}`} role="none">
+              <li key={item.id || `item-${i}`} role="none">
                 <a
                   role="menuitem"
-                  href={item.href}
+                  href="#"
+                  onClick={(e) => handleScroll(e, item.id)}
                   className="pill"
                   aria-label={item.label}
                   onMouseEnter={() => handleEnter(i)}
