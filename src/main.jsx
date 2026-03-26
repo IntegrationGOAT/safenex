@@ -4,6 +4,7 @@ import BorderGlow from './component/BorderGlow';
 import Navbar from './component/Navbar';
 import FatalitiesCounter from './component/FatalitiesCounter';
 import ServicesSection from './component/ServicesSection';
+import TeamSection from './component/TeamSection';
 import './style.css';
 
 function App() {
@@ -238,13 +239,8 @@ function App() {
         <ServicesSection />
       </div>
 
-      {/* Contact Section */}
-      <div id="contact" style={{ padding: '80px 40px', backgroundColor: '#000000', position: 'relative', zIndex: 1, textAlign: 'center' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '48px', fontWeight: 'bold', color: '#ffffff', marginBottom: '20px', letterSpacing: '1px' }}>Get in Touch</h2>
-          <p style={{ fontSize: '18px', color: '#cccccc', lineHeight: '1.6' }}>Contact us for more information about SafeNex and how we can help protect lives.</p>
-        </div>
-      </div>
+      {/* Team Section with Profile Cards */}
+      <TeamSection />
     </div>
   );
 }

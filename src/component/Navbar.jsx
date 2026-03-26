@@ -92,7 +92,7 @@ const Navbar = () => {
     { label: 'Home', id: 'hero' },
     { label: 'About', id: 'about' },
     { label: 'Services', id: 'services' },
-    { label: 'Contact Us', id: 'contact' }
+    { label: 'Our Team', id: 'contact' }
   ];
 
   return (
