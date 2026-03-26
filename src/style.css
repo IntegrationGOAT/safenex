@@ -15,6 +15,9 @@ body, html {
   filter: none !important;
   -webkit-filter: none !important;
   scroll-behavior: smooth;
+  font-family: "Iosevka Charon", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #root {
@@ -59,5 +62,50 @@ html::-webkit-scrollbar-thumb {
   }
   50% {
     box-shadow: 0 0 40px rgba(200, 132, 252, 0.8);
+  }
+}
+
+@keyframes floatOrb1 {
+  0%, 100% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translate(50px, -80px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(100px, 0);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translate(30px, 80px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes floatOrb2 {
+  0%, 100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+  33% {
+    transform: translate(-80px, 60px);
+    opacity: 0.5;
+  }
+  66% {
+    transform: translate(60px, -50px);
+    opacity: 0.4;
+  }
+}
+
+@keyframes floatOrb3 {
+  0%, 100% {
+    transform: translate(0, 0);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate(-70px, 90px);
+    opacity: 0.55;
   }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Prism from './Prism';
 import BorderGlow from './BorderGlow';
 import Navbar from './Navbar';
 import './style.css';
@@ -10,18 +9,44 @@ function App() {
     <div style={{ backgroundColor: '#000000' }}>
       {/* Hero Section - Fixed viewport */}
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100vh', zIndex: 0, backgroundColor: '#000000' }}>
-        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-          <Prism
-            animationType="3drotate"
-            timeScale={0.5}
-            height={3.5}
-            baseWidth={5.5}
-            scale={3.6}
-            hueShift={0}
-            colorFrequency={1}
-            noise={0}
-            glow={1}
-          />
+        <div style={{ width: '100%', height: '100%', position: 'relative', overflow: 'hidden' }}>
+          {/* Animated Background Orbs */}
+          <div style={{
+            position: 'absolute',
+            width: '500px',
+            height: '500px',
+            background: 'radial-gradient(circle, rgba(200, 132, 252, 0.3), transparent)',
+            borderRadius: '50%',
+            filter: 'blur(80px)',
+            animation: 'floatOrb1 8s ease-in-out infinite',
+            top: '-20%',
+            left: '-10%',
+            pointerEvents: 'none'
+          }} />
+          <div style={{
+            position: 'absolute',
+            width: '400px',
+            height: '400px',
+            background: 'radial-gradient(circle, rgba(100, 200, 255, 0.2), transparent)',
+            borderRadius: '50%',
+            filter: 'blur(70px)',
+            animation: 'floatOrb2 10s ease-in-out infinite',
+            bottom: '-10%',
+            right: '-5%',
+            pointerEvents: 'none'
+          }} />
+          <div style={{
+            position: 'absolute',
+            width: '350px',
+            height: '350px',
+            background: 'radial-gradient(circle, rgba(200, 150, 255, 0.25), transparent)',
+            borderRadius: '50%',
+            filter: 'blur(75px)',
+            animation: 'floatOrb3 12s ease-in-out infinite',
+            top: '30%',
+            right: '5%',
+            pointerEvents: 'none'
+          }} />
         </div>
         
         {/* Center Content - Stays in place */}
