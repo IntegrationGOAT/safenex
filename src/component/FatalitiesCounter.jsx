@@ -8,8 +8,8 @@ export default function FatalitiesCounter() {
     // Set up interval to increment at 30-second (30000ms) intervals
     const interval = setInterval(() => {
       setValue(prevValue => {
-        // Random increment between 1 and 15
-        const randomIncrement = Math.floor(Math.random() * 15) + 1;
+        // Random increment between 1 and 20
+        const randomIncrement = Math.floor(Math.random() * 20) + 1;
         const newValue = prevValue + randomIncrement;
         
         // Keep within bounds (0-999)
@@ -46,7 +46,7 @@ export default function FatalitiesCounter() {
           marginBottom: '40px',
           letterSpacing: '1px'
         }}>
-          Fatalities Worldwide Due to Fuel Tank Explosion and Fire
+          Fatalities Worldwide due to car accidents and fuel tank explosions
         </h2>
         
         <div style={{

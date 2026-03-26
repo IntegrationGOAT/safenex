@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import BorderGlow from './component/BorderGlow';
 import Navbar from './component/Navbar';
 import FatalitiesCounter from './component/FatalitiesCounter';
+import ServicesSection from './component/ServicesSection';
 import './style.css';
 
 function App() {
@@ -231,6 +232,9 @@ function App() {
 
       {/* Fatalities Counter Section */}
       <FatalitiesCounter />
+
+      {/* Services Section with Spotlight Cards */}
+      <ServicesSection />
     </div>
   );
 }
