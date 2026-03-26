@@ -1,4 +1,8 @@
 import './TeamSection.css';
+import JeetImg from '../assets/Jeet.jpg';
+import SomiliImg from '../assets/Somili.jpeg';
+import AnishImg from '../assets/ANISH DE.jpg';
+import AryakaImg from '../assets/Aryaka.jpeg';
 
 export default function TeamSection() {
   const teamMembers = [
@@ -6,25 +10,25 @@ export default function TeamSection() {
       name: 'Jeet',
       role: 'Lorem Ipsum sit dolor amet',
       colors: '#1cc2ff 0%, #ff261b 100%',
-      image: '/src/assets/Jeet.jpg'
+      image: JeetImg
     },
     {
       name: 'Somili',
       role: 'Lorem Ipsum sit dolor amet',
       colors: '#1cffa4 0%, #00d4ff 100%',
-      image: '/src/assets/Somili.jpeg'
+      image: SomiliImg
     },
     {
       name: 'Anish',
       role: 'Lorem Ipsum sit dolor amet',
       colors: '#ff261b 0%, #ff6b9d 100%',
-      image: '/src/assets/ANISH DE.jpg'
+      image: AnishImg
     },
     {
       name: 'Aryaka',
       role: 'Lorem Ipsum sit dolor amet',
       colors: '#00d4ff 0%, #7b61ff 100%',
-      image: '/src/assets/Aryaka.jpeg'
+      image: AryakaImg
     }
   ];
 
