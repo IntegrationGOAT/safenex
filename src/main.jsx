@@ -241,6 +241,23 @@ function App() {
 
       {/* Team Section with Profile Cards */}
       <TeamSection />
+
+      {/* Footer */}
+      <footer style={{
+        backgroundColor: '#0a0a0a',
+        borderTop: '1px solid #1a1a1a',
+        padding: '40px 20px',
+        textAlign: 'center',
+        marginTop: '60px'
+      }}>
+        <p style={{
+          fontSize: '14px',
+          color: '#888888',
+          margin: '0'
+        }}>
+          © SafeNex. All rights reserved 2026. blahblaha
+        </p>
+      </footer>
     </div>
   );
 }
