@@ -1,32 +1,32 @@
 import './TeamSection.css';
 import JeetImg from '../assets/Jeet.jpg';
-import SomiliImg from '../assets/Somili.jpeg';
+import SomiliImg from '../assets/soumili.jpeg';
 import AnishImg from '../assets/ANISH DE.jpg';
-import AryakaImg from '../assets/Aryaka.jpeg';
+import AryakaImg from '../assets/arya.jpeg';
 
 export default function TeamSection() {
   const teamMembers = [
     {
       name: 'Jeet',
-      role: 'Lorem Ipsum sit dolor amet',
+      role: 'AI & Tech Lead',
       colors: '#1cc2ff 0%, #ff261b 100%',
       image: JeetImg
     },
     {
       name: 'Somili',
-      role: 'Lorem Ipsum sit dolor amet',
+      role: 'Model Design & Graphic Lead',
       colors: '#1cffa4 0%, #00d4ff 100%',
       image: SomiliImg
     },
     {
       name: 'Anish',
-      role: 'Lorem Ipsum sit dolor amet',
+      role: 'Creator and R&D Lead',
       colors: '#ff261b 0%, #ff6b9d 100%',
       image: AnishImg
     },
     {
       name: 'Aryaka',
-      role: 'Lorem Ipsum sit dolor amet',
+      role: 'Prototype & Analytics Lead',
       colors: '#00d4ff 0%, #7b61ff 100%',
       image: AryakaImg
     }
@@ -130,7 +130,7 @@ export default function TeamSection() {
             </a>
 
             {/* YouTube */}
-            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" className="social-btn">
+            <a href="https://youtu.be/BSErYhbnLpU?si=Z5cNoHWgEx9YF7zU" target="_blank" rel="noopener noreferrer" className="social-btn">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg>

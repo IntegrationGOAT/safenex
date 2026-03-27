@@ -13,7 +13,7 @@ export default function ServicesSection() {
         {/* Section Header */}
         <div style={{ marginBottom: '60px', textAlign: 'center' }}>
           <h2 style={{
-            fontSize: '48px',
+            fontSize: '56px',
             fontWeight: 'bold',
             color: '#ffffff',
             marginBottom: '20px',
@@ -22,13 +22,13 @@ export default function ServicesSection() {
             How SafeNex Protects Lives
           </h2>
           <p style={{
-            fontSize: '18px',
+            fontSize: '22px',
             color: '#cccccc',
             maxWidth: '800px',
             margin: '0 auto',
             lineHeight: '1.6'
           }}>
-            SafeNex combines simple sensors, microcontroller logic and fluid mechanics to stop fires before they start. Below are the core services the system delivers when a crash occurs.
+            Safenex combines simple sensors, microcontroller logic and fluid mechanics to stop fires before they start. Below are the core services the system delivers when a crash occurs.
           </p>
         </div>
 
@@ -47,16 +47,16 @@ export default function ServicesSection() {
                 marginBottom: '16px',
                 margin: 0
               }}>
-                Impact Detection
+                How SafeNex Works
               </h3>
               <p style={{
-                fontSize: '16px',
+                fontSize: '18px',
                 color: '#cccccc',
                 lineHeight: '1.6',
                 flexGrow: 1,
                 marginTop: '16px'
               }}>
-                <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                SafeNex combines advanced flame detection sensors with microcontroller logic to identify fires instantly. When an accident occurs and fire is detected, the system automatically triggers a specialized pump that releases an emulsifying fluid into the fuel tank. An agitation motor then mixes this solution to reduce flammability and prevent fire propagation. This innovative approach uses the science of emulsification to isolate oil droplets, making fuel inherently safer and protecting both the vehicle and passengers from post-accident fires and explosions.
               </p>
             </div>
           </SpotlightCard>
@@ -68,7 +68,7 @@ export default function ServicesSection() {
           >
             <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
               <h3 style={{
-                fontSize: '24px',
+                fontSize: '28px',
                 fontWeight: 'bold',
                 color: '#ffffff',
                 marginBottom: '16px',
@@ -77,13 +77,13 @@ export default function ServicesSection() {
                 Decision & Trigger
               </h3>
               <p style={{
-                fontSize: '15px',
+                fontSize: '18px',
                 color: '#cccccc',
                 lineHeight: '1.6',
                 flexGrow: 1,
                 marginTop: '12px'
               }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                The microcontroller activates a specialized pump that releases emulsifying fluid into the fuel tank. An agitation motor then mixes the solution to reduce flammability and prevent fire propagation.
               </p>
             </div>
           </SpotlightCard>
@@ -95,7 +95,7 @@ export default function ServicesSection() {
           >
             <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
               <h3 style={{
-                fontSize: '20px',
+                fontSize: '26px',
                 fontWeight: 'bold',
                 color: '#ffffff',
                 marginBottom: '12px',
@@ -104,13 +104,13 @@ export default function ServicesSection() {
                 Alert & Logging
               </h3>
               <p style={{
-                fontSize: '14px',
+                fontSize: '18px',
                 color: '#cccccc',
                 lineHeight: '1.6',
                 flexGrow: 1,
                 marginTop: '12px'
               }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.
+                Instant notifications alert drivers and emergency services when fire is detected, enabling rapid response and safe evacuation.
               </p>
             </div>
           </SpotlightCard>
@@ -122,7 +122,7 @@ export default function ServicesSection() {
           >
             <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
               <h3 style={{
-                fontSize: '18px',
+                fontSize: '26px',
                 fontWeight: 'bold',
                 color: '#ffffff',
                 marginBottom: '12px',
@@ -131,13 +131,13 @@ export default function ServicesSection() {
                 System Features
               </h3>
               <p style={{
-                fontSize: '14px',
+                fontSize: '18px',
                 color: '#cccccc',
                 lineHeight: '1.6',
                 flexGrow: 1,
                 marginTop: '12px'
               }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                Automated detection, intelligent fluid dispersion, continuous monitoring, and real-time alert system for comprehensive protection.
               </p>
             </div>
           </SpotlightCard>
@@ -149,7 +149,7 @@ export default function ServicesSection() {
           >
             <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
               <h3 style={{
-                fontSize: '18px',
+                fontSize: '26px',
                 fontWeight: 'bold',
                 color: '#ffffff',
                 marginBottom: '12px',
@@ -158,13 +158,13 @@ export default function ServicesSection() {
                 Technical Specs
               </h3>
               <p style={{
-                fontSize: '14px',
+                fontSize: '18px',
                 color: '#cccccc',
                 lineHeight: '1.6',
                 flexGrow: 1,
                 marginTop: '12px'
               }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                Precision sensors, microcontroller logic, high-capacity fluid pump, and advanced agitation motor for maximum reliability.
               </p>
             </div>
           </SpotlightCard>
@@ -176,7 +176,7 @@ export default function ServicesSection() {
           >
             <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
               <h3 style={{
-                fontSize: '18px',
+                fontSize: '26px',
                 fontWeight: 'bold',
                 color: '#ffffff',
                 marginBottom: '12px',
@@ -185,13 +185,13 @@ export default function ServicesSection() {
                 Integration
               </h3>
               <p style={{
-                fontSize: '14px',
+                fontSize: '18px',
                 color: '#cccccc',
                 lineHeight: '1.6',
                 flexGrow: 1,
                 marginTop: '12px'
               }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                Seamlessly integrated with existing vehicle systems for automatic activation and zero manual intervention required.
               </p>
             </div>
           </SpotlightCard>
@@ -209,7 +209,7 @@ export default function ServicesSection() {
                 marginBottom: '20px',
                 margin: 0
               }}>
-                Our Mission
+                Our Vision
               </h3>
               <p style={{
                 fontSize: '18px',
@@ -219,7 +219,7 @@ export default function ServicesSection() {
                 flexGrow: 1,
                 marginTop: '12px'
               }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                To revolutionize vehicle safety by delivering an intelligent, autonomous fire suppression system that protects lives and property in the critical moments following an accident.
               </p>
             </div>
           </SpotlightCard>

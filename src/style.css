@@ -15,8 +15,9 @@ body, html {
   filter: none !important;
   -webkit-filter: none !important;
   scroll-behavior: smooth;
-  font-family: "Iosevka Charon", monospace;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 286;
   font-style: normal;
 }
 
@@ -107,5 +108,38 @@ html::-webkit-scrollbar-thumb {
   50% {
     transform: translate(-70px, 90px);
     opacity: 0.55;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -14,7 +14,7 @@
   display: grid;
   border: 1px solid rgb(255 255 255 / 15%);
   background: var(--card-bg, #060010);
-  overflow: visible;
+  overflow: hidden;
   box-shadow:
     rgba(0, 0, 0, 0.1) 0px 1px 2px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px,
@@ -22,6 +22,8 @@
     rgba(0, 0, 0, 0.1) 0px 8px 16px,
     rgba(0, 0, 0, 0.1) 0px 16px 32px,
     rgba(0, 0, 0, 0.1) 0px 32px 64px;
+  height: 100%;
+  width: 100%;
 }
 
 .border-glow-card::before,
@@ -136,6 +138,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
   z-index: 1;
+  height: 100%;
+  width: 100%;
 }

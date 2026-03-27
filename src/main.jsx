@@ -5,6 +5,7 @@ import Navbar from './component/Navbar';
 import FatalitiesCounter from './component/FatalitiesCounter';
 import ServicesSection from './component/ServicesSection';
 import TeamSection from './component/TeamSection';
+import bgVideo from './assets/bg.mp4';
 import './style.css';
 
 function App() {
@@ -13,77 +14,35 @@ function App() {
       {/* Hero Section - Fixed viewport */}
       <div id="hero" style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100vh', zIndex: 0, backgroundColor: '#000000' }}>
         <div style={{ width: '100%', height: '100%', position: 'relative', overflow: 'hidden' }}>
-          {/* Animated Background Orbs */}
+          {/* Video Background */}
+          <video
+            autoPlay
+            muted
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              zIndex: 0
+            }}
+          >
+            <source src={bgVideo} type="video/mp4" />
+          </video>
+
+          {/* Dark overlay */}
           <div style={{
             position: 'absolute',
-            width: '500px',
-            height: '500px',
-            background: 'radial-gradient(circle, rgba(200, 132, 252, 0.3), transparent)',
-            borderRadius: '50%',
-            filter: 'blur(80px)',
-            animation: 'floatOrb1 8s ease-in-out infinite',
-            top: '-20%',
-            left: '-10%',
-            pointerEvents: 'none'
-          }} />
-          <div style={{
-            position: 'absolute',
-            width: '400px',
-            height: '400px',
-            background: 'radial-gradient(circle, rgba(100, 200, 255, 0.2), transparent)',
-            borderRadius: '50%',
-            filter: 'blur(70px)',
-            animation: 'floatOrb2 10s ease-in-out infinite',
-            bottom: '-10%',
-            right: '-5%',
-            pointerEvents: 'none'
-          }} />
-          <div style={{
-            position: 'absolute',
-            width: '350px',
-            height: '350px',
-            background: 'radial-gradient(circle, rgba(200, 150, 255, 0.25), transparent)',
-            borderRadius: '50%',
-            filter: 'blur(75px)',
-            animation: 'floatOrb3 12s ease-in-out infinite',
-            top: '30%',
-            right: '5%',
-            pointerEvents: 'none'
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.4)',
+            zIndex: 1
           }} />
         </div>
         
-        {/* Center Content - Stays in place */}
-        <div style={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          textAlign: 'center',
-          zIndex: 10,
-          width: '90%',
-          maxWidth: '800px',
-          pointerEvents: 'none'
-        }}>
-          <h1 style={{
-            fontSize: '72px',
-            fontWeight: 'bold',
-            color: '#ffffff',
-            margin: '0 0 24px 0',
-            letterSpacing: '2px'
-          }}>SafeNex</h1>
-          
-          <p style={{
-            fontSize: '18px',
-            color: '#ffffff',
-            margin: '0',
-            lineHeight: '1.6',
-            fontWeight: '300',
-            opacity: 0.9
-          }}>
-            To reduce post-accident fatalities and property loss by providing an automatic, low-cost solution that prevents fuel tank fires through smart emulsification.
-          </p>
-        </div>
-
         {/* Gradient blend at bottom - Larger */}
         <div style={{
           position: 'absolute',
@@ -106,7 +65,7 @@ function App() {
             How SafeNex Works
           </h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px', gridAutoRows: '360px' }}>
             {/* Card 1 */}
             <BorderGlow
               edgeSensitivity={53}
@@ -118,11 +77,10 @@ function App() {
               coneSpread={37}
               colors={['#c084fc', '#f472b6', '#38bdf8']}
             >
-              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.1s both' }}>
-                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>What is Emulsification...?</h3>
-                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <div style={{ padding: '1.5em', animation: 'cardFadeIn 0.8s ease-out 0.1s both', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <h3 style={{ fontSize: '28px', fontWeight: 'bold', color: '#ffffff', marginBottom: '12px', margin: 0 }}>What is Emulsification...?</h3>
+                <p style={{ fontSize: '18px', color: '#cccccc', lineHeight: '1.5', margin: '0.5em 0 0 0', flexGrow: 1, overflow: 'hidden' }}>
+                 Emulsification is the process of mixing two immiscible liquids (like oil and water) into a stable mixture. Soap helps by reducing surface tension and forming a stable emulsion. In SAFENEX, emulsification reduces fuel flammability.
                 </p>
               </div>
             </BorderGlow>
@@ -138,11 +96,10 @@ function App() {
               coneSpread={37}
               colors={['#c084fc', '#f472b6', '#38bdf8']}
             >
-              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.2s both' }}>
-                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Saponification</h3>
-                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <div style={{ padding: '1.5em', animation: 'cardFadeIn 0.8s ease-out 0.2s both', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <h3 style={{ fontSize: '28px', fontWeight: 'bold', color: '#ffffff', marginBottom: '12px', margin: 0 }}>Saponification</h3>
+                <p style={{ fontSize: '18px', color: '#cccccc', lineHeight: '1.5', margin: '0.5em 0 0 0', flexGrow: 1, overflow: 'hidden' }}>
+                  Alkaline hydrolysis of fats/oils with NaOH produces soap and glycerol. Reaction: Triglyceride + 3NaOH → Glycerol + Soap. Soap acts as an emulsifier.
                 </p>
               </div>
             </BorderGlow>
@@ -158,14 +115,17 @@ function App() {
               coneSpread={37}
               colors={['#c084fc', '#f472b6', '#38bdf8']}
             >
-              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.3s both' }}>
-                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Working Equations</h3>
-                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+              <div style={{ padding: '1.5em', animation: 'cardFadeIn 0.8s ease-out 0.3s both', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <h3 style={{ fontSize: '28px', fontWeight: 'bold', color: '#ffffff', marginBottom: '12px', margin: 0 }}>Working Equations</h3>
+                <div style={{ fontSize: '18px', color: '#cccccc', lineHeight: '1.4', margin: '0.5em 0 0 0', flexGrow: 1, overflow: 'hidden' }}>
+                  <p style={{ margin: '0 0 4px 0' }}>Triglyceride + 3NaOH → Glycerol + Soap</p>
+                  <p style={{ margin: '4px 0' }}>RCOONa → RCOO⁻ + Na⁺</p>
+                  <p style={{ margin: '4px 0' }}>Fuel + Water + Emulsifier → Emulsion</p>
+                  <p style={{ margin: '4px 0 0 0' }}>2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O</p>
+                </div>
               </div>
             </BorderGlow>
+            
 
             {/* Card 4 */}
             <BorderGlow
@@ -178,12 +138,12 @@ function App() {
               coneSpread={37}
               colors={['#c084fc', '#f472b6', '#38bdf8']}
             >
-              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.4s both' }}>
-                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>View our Archives</h3>
-                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/><br/>
-                  <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'none', fontWeight: '500' }}>View it here →</a>
+              <div style={{ padding: '1.5em', animation: 'cardFadeIn 0.8s ease-out 0.4s both', display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'space-between' }}>
+                <h3 style={{ fontSize: '44px', fontWeight: 'bold', color: '#ffffff', marginBottom: '12px', margin: 0 }}>View Our Archives</h3>
+                <p style={{ fontSize: '20px', color: '#cccccc', lineHeight: '1.5', margin: '0.5em 0 0 0' }}>
+                  Overview of reports and demos
+                  <br/>
+                  <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8', textDecoration: 'none', fontWeight: '500' }}>View →</a>
                 </p>
               </div>
             </BorderGlow>
@@ -199,12 +159,14 @@ function App() {
               coneSpread={37}
               colors={['#c084fc', '#f472b6', '#38bdf8']}
             >
-              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.5s both' }}>
-                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Advanced Technology</h3>
-                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
-                </p>
+              <div style={{ padding: '1.5em', animation: 'cardFadeIn 0.8s ease-out 0.5s both', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '12px', margin: 0 }}>Advanced Technology</h3>
+                <div style={{ fontSize: '16px', color: '#cccccc', lineHeight: '1.4', margin: '0.5em 0 0 0', flexGrow: 1 }}>
+                  <p style={{ margin: '0 0 4px 0' }}>• Arduino Mega</p>
+                  <p style={{ margin: '4px 0' }}>• Flame Sensors</p>
+                  <p style={{ margin: '4px 0' }}>• Emulsification</p>
+                  <p style={{ margin: '4px 0 0 0' }}>• AI & IoT</p>
+                </div>
               </div>
             </BorderGlow>
 
@@ -219,12 +181,14 @@ function App() {
               coneSpread={37}
               colors={['#c084fc', '#f472b6', '#38bdf8']}
             >
-              <div style={{ padding: '2em', animation: 'cardFadeIn 0.8s ease-out 0.6s both' }}>
-                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '16px' }}>Future Prospects</h3>
-                <p style={{ fontSize: '14px', color: '#cccccc', lineHeight: '1.6', margin: '0' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
-                </p>
+              <div style={{ padding: '1.5em', animation: 'cardFadeIn 0.8s ease-out 0.6s both', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '12px', margin: 0 }}>Future Prospects</h3>
+                <div style={{ fontSize: '16px', color: '#cccccc', lineHeight: '1.4', margin: '0.5em 0 0 0', flexGrow: 1 }}>
+                  <p style={{ margin: '0 0 4px 0' }}>• Smart vehicle integration</p>
+                  <p style={{ margin: '4px 0' }}>• Industrial safety</p>
+                  <p style={{ margin: '4px 0' }}>• Better emulsifiers</p>
+                  <p style={{ margin: '4px 0' }}>• Cost optimization</p>
+                </div>
               </div>
             </BorderGlow>
           </div>
