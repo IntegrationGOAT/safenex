@@ -2,7 +2,7 @@
 
 SafeNex is an innovative fire safety technology that utilizes emulsification to reduce fuel flammability and prevent vehicle fires. This repository contains the official SafeNex web application built with React and Vite.
 
-## 🔥 About SafeNex
+##  About SafeNex
 
 SafeNex addresses the critical issue of vehicle fires by employing emulsification technology to reduce fuel flammability. Using principles of chemistry such as saponification and emulsification, SafeNex creates a safer fuel mixture that is less prone to ignition.
 
@@ -12,7 +12,7 @@ SafeNex addresses the critical issue of vehicle fires by employing emulsificatio
 - **Saponification**: Alkaline hydrolysis of fats/oils with NaOH to produce soap and glycerol, which acts as an emulsifier
 - **Advanced Technology**: Integration of Arduino Mega, flame sensors, AI, and IoT for comprehensive fire safety
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 - **Frontend Framework**: React 19.2.4
 - **Build Tool**: Vite 8.0.1
@@ -22,13 +22,13 @@ SafeNex addresses the critical issue of vehicle fires by employing emulsificatio
 - **3D Graphics**: OGL 1.0.11
 - **Language**: JavaScript (JSX)
 
-## 📋 Prerequisites
+##  Prerequisites
 
 Before you begin, ensure you have the following installed:
 - Node.js (v18 or higher recommended)
 - npm or bun package manager
 
-## 🛠️ Installation
+##  Installation
 
 1. Clone the repository:
 ```bash
@@ -46,7 +46,7 @@ or if using bun:
 bun install
 ```
 
-## 💻 Development
+##  Development
 
 Start the development server:
 
@@ -61,7 +61,7 @@ bun run dev
 
 The application will be available at `http://localhost:5173` (default Vite port).
 
-## 🏗️ Build
+## Build
 
 Create a production build:
 
@@ -74,7 +74,7 @@ or with bun:
 bun run build
 ```
 
-## 👀 Preview
+##  Preview
 
 Preview the production build locally:
 
@@ -87,7 +87,7 @@ or with bun:
 bun run preview
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 safenex/
@@ -109,7 +109,7 @@ safenex/
 └── vite.config.js      # Vite configuration
 ```
 
-## ✨ Features
+##  Features
 
 - **Interactive Hero Section**: Video background with smooth transitions
 - **Educational Content**: Information about emulsification and saponification
@@ -119,7 +119,7 @@ safenex/
 - **Responsive Design**: Optimized for various screen sizes
 - **Smooth Animations**: Enhanced user experience with GSAP and Motion
 
-## 🧪 Working Equations
+##  Working Equations
 
 The science behind SafeNex:
 
@@ -128,22 +128,22 @@ The science behind SafeNex:
 3. **Emulsification**: Fuel + Water + Emulsifier → Emulsion
 4. **Combustion**: 2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O
 
-## 🔮 Future Prospects
+##  Future Prospects
 
 - Smart vehicle integration
 - Industrial safety applications
 - Development of better emulsifiers
 - Cost optimization strategies
 
-## 📄 License
+##  License
 
 This project is private and proprietary.
 
-## 👥 Team
+##  Team
 
 For team information and contributions, please visit the application's Team section.
 
-## 📞 Contact
+##  Contact
 
 © SafeNex. All rights reserved 2026.
 
