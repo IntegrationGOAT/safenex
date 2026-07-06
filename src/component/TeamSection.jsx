@@ -12,24 +12,6 @@ export default function TeamSection() {
       colors: '#1cc2ff 0%, #ff261b 100%',
       image: JeetImg
     },
-    {
-      name: 'Somili',
-      role: 'Model Design & Graphic Lead',
-      colors: '#1cffa4 0%, #00d4ff 100%',
-      image: SomiliImg
-    },
-    {
-      name: 'Anish',
-      role: 'Creator and R&D Lead',
-      colors: '#ff261b 0%, #ff6b9d 100%',
-      image: AnishImg
-    },
-    {
-      name: 'Aryaka',
-      role: 'Prototype & Analytics Lead',
-      colors: '#00d4ff 0%, #7b61ff 100%',
-      image: AryakaImg
-    }
   ];
 
   return (
