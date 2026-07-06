@@ -1,8 +1,5 @@
 import './TeamSection.css';
 import JeetImg from '../assets/Jeet.jpg';
-import SomiliImg from '../assets/soumili.jpeg';
-import AnishImg from '../assets/ANISH DE.jpg';
-import AryakaImg from '../assets/arya.jpeg';
 
 export default function TeamSection() {
   const teamMembers = [
