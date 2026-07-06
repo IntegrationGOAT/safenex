@@ -165,7 +165,7 @@ function App() {
                   <p style={{ margin: '0 0 4px 0' }}>• Arduino Mega</p>
                   <p style={{ margin: '4px 0' }}>• Flame Sensors</p>
                   <p style={{ margin: '4px 0' }}>• Emulsification</p>
-                  <p style={{ margin: '4px 0 0 0' }}>• AI & IoT</p>
+                  <p style={{ margin: '4px 0 0 0' }}>• AI & IoT - Used CNN for image detection in the prototype</p>
                 </div>
               </div>
             </BorderGlow>
